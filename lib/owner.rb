@@ -46,6 +46,9 @@ class Owner
     self.pets.map do |species, pet_hash|
       pet_hash.map do |pet|
         pet.mood = "nervous"
+      end 
+    end
+  end
   
   def self.all 
     @@all 
