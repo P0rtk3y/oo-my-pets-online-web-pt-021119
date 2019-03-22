@@ -47,6 +47,7 @@ class Owner
       pet_hash.map do |pet|
         pet.mood = "nervous"
       end 
+      pet_hash.clear 
     end
   end
   
