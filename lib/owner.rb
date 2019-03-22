@@ -43,7 +43,9 @@ class Owner
   end 
   
   def sell_pets 
-    self.pets.tap{|pet| pet
+    self.pets.map do |species, pet_hash|
+      pet_hash.map do |pet|
+        pet.mood = "nervous"
   
   def self.all 
     @@all 
